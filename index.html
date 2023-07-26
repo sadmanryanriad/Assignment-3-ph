@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Burst</title>
+    <!-- Tailwind and DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom tailwind color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'red-primary': '#F85559',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/c5617eb0f6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <!-- navbar container -->
+        <div class="navbar lg:bg-red-primary rounded-full mt-5 max-w-screen-xl container mx-auto">
+            <!-- menu for large devices -->
+            <div class="navbar-start hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                </ul>
+            </div>
+            <!-- logo container -->
+            <div class="navbar-center gap-3">
+                <img src="./images/logo.png" alt="logo">
+                <h3>Fruit Burst</h3>
+            </div>
+            <!-- ekhane small device a hidden dile boro device a flex dite hobe nato show korbe na -->
+            <div class="navbar-end relative">
+                <!-- search box -->
+                <div class=" justify-center items-center hidden lg:flex">
+                    <input type="text" placeholder="Type here"
+                        class=" input rounded-full w-full max-w-xs" />
+                </div>
+                <!-- dropdown menu -->
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <!-- menu for small devices -->
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-magnifying-glass absolute right-9 hidden lg:flex"></i>
+            </div>
+        </div>
+    </header>
+    <main>
+        
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
