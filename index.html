@@ -23,12 +23,21 @@
     </script>
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/c5617eb0f6.js" crossorigin="anonymous"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        .lato-font {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
 </head>
 
-<body>
-    <header>
+<body class="lato-font">
+    <header class="max-w-screen-2xl mx-auto">
         <!-- navbar container -->
-        <div class="navbar lg:bg-red-primary rounded-full mt-5 max-w-screen-xl container mx-auto">
+        <div class="navbar lg:bg-red-primary rounded-full my-9 lg:py-6 lg:px-10">
             <!-- menu for large devices -->
             <div class="navbar-start hidden lg:flex">
                 <ul class="menu menu-horizontal px-1">
@@ -47,8 +56,7 @@
             <div class="navbar-end relative">
                 <!-- search box -->
                 <div class=" justify-center items-center hidden lg:flex">
-                    <input type="text" placeholder="Type here"
-                        class=" input rounded-full w-full max-w-xs" />
+                    <input type="text" placeholder="Type here" class=" input rounded-full w-full max-w-xs" />
                 </div>
                 <!-- dropdown menu -->
                 <div class="dropdown">
@@ -71,9 +79,145 @@
                 <i class="fa-solid fa-magnifying-glass absolute right-9 hidden lg:flex"></i>
             </div>
         </div>
+
+        <!-- hero banner section -->
+        <section class="relative">
+            <div class="carousel w-full">
+                <!-- banner 1 -->
+                <div id="slide1" class="carousel-item relative w-full">
+                    <!-- overlay -->
+                    <div class="hero bg-[url('./images/banner1.png')] rounded-lg">
+                        <div class="hero-overlay rounded-lg bg-opacity-70">
+                        </div>
+
+                        <div class=" text-center py-6 px-10 lg:pt-16 lg:pb-44">
+                            <div class="max-w-[600px] ">
+                                <h1 class=" text-5xl md:text-7xl font-extrabold text-white pb-6">A Exotic
+                                    tastes at your doorstep</h1>
+                                <p class="mb-8 text-white ">We supply high quality organic products</p>
+                                <div>
+                                    <button
+                                        class=" normal-case bg-red-primary text-white font-medium text-[1.25rem] py-4 px-10 rounded-lg">Shop
+                                        Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- overlay ends -->
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- banner 2 -->
+                <div id="slide2" class="carousel-item relative w-full">
+                    <!-- overlay -->
+                    <div class="hero bg-[url('./images/banner2.png')] rounded-lg">
+                        <div class="hero-overlay rounded-lg bg-opacity-70">
+                        </div>
+
+                        <div class=" text-center py-6 px-10 lg:pt-16 lg:pb-44">
+                            <div class="max-w-[600px] ">
+                                <h1 class=" text-5xl md:text-7xl font-extrabold text-white pb-6">A Exotic
+                                    tastes at your doorstep</h1>
+                                <p class="mb-8 text-white ">We supply high quality organic products</p>
+                                <div>
+                                    <button
+                                        class=" normal-case bg-red-primary text-white font-medium text-[1.25rem] py-4 px-10 rounded-lg">Shop
+                                        Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- overlay ends -->
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- banner 3 -->
+                <div id="slide3" class="carousel-item relative w-full">
+                    <!-- overlay -->
+                    <div class="hero bg-[url('./images/banner3.png')] rounded-lg">
+                        <div class="hero-overlay rounded-lg bg-opacity-70">
+                        </div>
+
+                        <div class=" text-center py-6 px-10 lg:pt-16 lg:pb-44">
+                            <div class="max-w-[600px] ">
+                                <h1 class=" text-5xl md:text-7xl font-extrabold text-white pb-6">A Exotic
+                                    tastes at your doorstep</h1>
+                                <p class="mb-8 text-white ">We supply high quality organic products</p>
+                                <div>
+                                    <button
+                                        class=" normal-case bg-red-primary text-white font-medium text-[1.25rem] py-4 px-10 rounded-lg">Shop
+                                        Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- overlay ends -->
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- banner 4 -->
+                <div id="slide4" class="carousel-item relative w-full">
+                    <!-- overlay -->
+                    <div class="hero bg-[url('./images/banner4.png')] rounded-lg">
+                        <div class="hero-overlay rounded-lg bg-opacity-70">
+                        </div>
+
+                        <div class=" text-center py-6 px-10 lg:pt-16 lg:pb-44">
+                            <div class="max-w-[600px] ">
+                                <h1 class=" text-5xl md:text-7xl font-extrabold text-white pb-6">A Exotic
+                                    tastes at your doorstep</h1>
+                                <p class="mb-8 text-white ">We supply high quality organic products</p>
+                                <div>
+                                    <button
+                                        class=" normal-case bg-red-primary text-white font-medium text-[1.25rem] py-4 px-10 rounded-lg">Shop
+                                        Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- overlay ends -->
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+                            <!-- banner overlay box  -->
+                            <div
+                            class="hidden gap-20 shadow-lg lg:grid grid-flow-col justify-items-center bg-white rounded-lg py-10 px-16 absolute -bottom-[19%] left-[50%] translate-x-[-50%]">
+        
+                            <div >
+                                <img class="max-h-28 max-w-[112px]" src="./images/fruit1.png" alt="">
+                                <h3 class="text-center text-xl">Grapes</h3>
+                            </div>
+                            <div >
+                                <img class="max-h-28 max-w-[112px]" src="./images/fruit2.png" alt="">
+                                <h3 class="text-center text-xl">Orange</h3>
+                            </div>
+                            <div >
+                                <img class="max-h-28 max-w-[112px]" src="./images/fruit3.png" alt="">
+                                <h3 class="text-center text-xl">Mango</h3>
+                            </div>
+                            <div >
+                                <img class="max-h-28 max-w-[112px]" src="./images/fruit4.png" alt="">
+                                <h3 class="text-center text-xl">Strawberry</h3>
+                            </div>
+                            <div >
+                                <img class="max-h-28 max-w-[112px]" src="./images/fruit5.png" alt="">
+                                <h3 class="text-center text-xl">Pomegranate</h3>
+                            </div>
+        
+                        </div>
+        </section>
     </header>
     <main>
-        
+
     </main>
     <footer>
 
