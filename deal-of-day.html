@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fruit Burst</title>
+    <title>deal of the day</title>
     <!-- Tailwind and DaisyUI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -35,191 +35,9 @@
 </head>
 
 <body class="lato-font">
-    <header class="max-w-screen-2xl mx-auto px-4 md:px-10 lg:px-13  mb-5 lg:mb-60">
-        <!-- navbar container -->
-        <div class="navbar lg:bg-red-primary rounded-full my-9 lg:py-6 lg:px-10">
-            <!-- menu for large devices -->
-            <div class="navbar-start hidden lg:flex">
-                <ul class="menu menu-horizontal px-1">
-                    <li><a>Home</a></li>
-                    <li><a>About Us</a></li>
-                    <li><a>Shop</a></li>
-                    <li><a>All Fruits</a></li>
-                </ul>
-            </div>
-            <!-- logo container -->
-            <div class="navbar-center gap-3">
-                <img src="./images/logo.png" alt="logo">
-                <h3>Fruit Burst</h3>
-            </div>
-            <!-- ekhane small device a hidden dile boro device a flex dite hobe nato show korbe na -->
-            <div class="navbar-end relative">
-                <!-- search box -->
-                <div class=" justify-center items-center hidden lg:flex">
-                    <input type="text" placeholder="Type here" class=" input rounded-full w-full max-w-xs" />
-                </div>
-                <!-- dropdown menu -->
-                <div class="dropdown">
-                    <label tabindex="0" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
-                    </label>
-                    <!-- menu for small devices -->
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a>Home</a></li>
-                        <li><a>About Us</a></li>
-                        <li><a>Shop</a></li>
-                        <li><a>All Fruits</a></li>
-                    </ul>
-                </div>
-                <i class="fa-solid fa-magnifying-glass absolute right-9 hidden lg:flex"></i>
-            </div>
-        </div>
-
-        <!-- hero banner section -->
-        <section class="relative">
-            <div class="carousel w-full">
-                <!-- banner 1 -->
-                <div id="slide1" class="carousel-item relative w-full">
-                    <!-- overlay -->
-                    <div class="hero bg-[url('./images/banner1.png')] rounded-lg">
-                        <div class="hero-overlay rounded-lg bg-opacity-70">
-                        </div>
-
-                        <div class=" text-center py-6 px-10 lg:pt-16 lg:pb-44">
-                            <div class="max-w-[600px] ">
-                                <h1 class=" text-5xl md:text-7xl font-extrabold text-white pb-6">A Exotic
-                                    tastes at your doorstep</h1>
-                                <p class="mb-8 text-white ">We supply high quality organic products</p>
-                                <div>
-                                    <button
-                                        class=" normal-case bg-red-primary text-white font-medium text-[1.25rem] py-4 px-10 rounded-lg">Shop
-                                        Now</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- overlay ends -->
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide4" class="btn btn-circle">❮</a>
-                        <a href="#slide2" class="btn btn-circle">❯</a>
-                    </div>
-                </div>
-                <!-- banner 2 -->
-                <div id="slide2" class="carousel-item relative w-full">
-                    <!-- overlay -->
-                    <div class="hero bg-[url('./images/banner2.png')] rounded-lg">
-                        <div class="hero-overlay rounded-lg bg-opacity-70">
-                        </div>
-
-                        <div class=" text-center py-6 px-10 lg:pt-16 lg:pb-44">
-                            <div class="max-w-[600px] ">
-                                <h1 class=" text-5xl md:text-7xl font-extrabold text-white pb-6">A Exotic
-                                    tastes at your doorstep</h1>
-                                <p class="mb-8 text-white ">We supply high quality organic products</p>
-                                <div>
-                                    <button
-                                        class=" normal-case bg-red-primary text-white font-medium text-[1.25rem] py-4 px-10 rounded-lg">Shop
-                                        Now</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- overlay ends -->
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide1" class="btn btn-circle">❮</a>
-                        <a href="#slide3" class="btn btn-circle">❯</a>
-                    </div>
-                </div>
-                <!-- banner 3 -->
-                <div id="slide3" class="carousel-item relative w-full">
-                    <!-- overlay -->
-                    <div class="hero bg-[url('./images/banner3.png')] rounded-lg">
-                        <div class="hero-overlay rounded-lg bg-opacity-70">
-                        </div>
-
-                        <div class=" text-center py-6 px-10 lg:pt-16 lg:pb-44">
-                            <div class="max-w-[600px] ">
-                                <h1 class=" text-5xl md:text-7xl font-extrabold text-white pb-6">A Exotic
-                                    tastes at your doorstep</h1>
-                                <p class="mb-8 text-white ">We supply high quality organic products</p>
-                                <div>
-                                    <button
-                                        class=" normal-case bg-red-primary text-white font-medium text-[1.25rem] py-4 px-10 rounded-lg">Shop
-                                        Now</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- overlay ends -->
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide2" class="btn btn-circle">❮</a>
-                        <a href="#slide4" class="btn btn-circle">❯</a>
-                    </div>
-                </div>
-                <!-- banner 4 -->
-                <div id="slide4" class="carousel-item relative w-full">
-                    <!-- overlay -->
-                    <div class="hero bg-[url('./images/banner4.png')] rounded-lg">
-                        <div class="hero-overlay rounded-lg bg-opacity-70">
-                        </div>
-
-                        <div class=" text-center py-6 px-10 lg:pt-16 lg:pb-44">
-                            <div class="max-w-[600px] ">
-                                <h1 class=" text-5xl md:text-7xl font-extrabold text-white pb-6">A Exotic
-                                    tastes at your doorstep</h1>
-                                <p class="mb-8 text-white ">We supply high quality organic products</p>
-                                <div>
-                                    <button
-                                        class=" normal-case bg-red-primary text-white font-medium text-[1.25rem] py-4 px-10 rounded-lg">Shop
-                                        Now</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- overlay ends -->
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide3" class="btn btn-circle">❮</a>
-                        <a href="#slide1" class="btn btn-circle">❯</a>
-                    </div>
-                </div>
-            </div>
-            <!-- banner overlay box  -->
-            <div
-                class="hidden gap-20 shadow-lg lg:grid grid-flow-col justify-items-center bg-white rounded-lg py-10 px-16 absolute -bottom-[19%] left-[50%] translate-x-[-50%]">
-
-                <div>
-                    <img class="max-h-28 max-w-[112px]" src="./images/fruit1.png" alt="">
-                    <h3 class="text-center text-xl">Grapes</h3>
-                </div>
-                <div>
-                    <img class="max-h-28 max-w-[112px]" src="./images/fruit2.png" alt="">
-                    <h3 class="text-center text-xl">Orange</h3>
-                </div>
-                <div>
-                    <img class="max-h-28 max-w-[112px]" src="./images/fruit3.png" alt="">
-                    <h3 class="text-center text-xl">Mango</h3>
-                </div>
-                <div>
-                    <img class="max-h-28 max-w-[112px]" src="./images/fruit4.png" alt="">
-                    <h3 class="text-center text-xl">Strawberry</h3>
-                </div>
-                <div>
-                    <img class="max-h-28 max-w-[112px]" src="./images/fruit5.png" alt="">
-                    <h3 class="text-center text-xl">Pomegranate</h3>
-                </div>
-
-            </div>
-        </section>
-    </header>
-
-    <main class="max-w-screen-2xl mx-auto px-4 md:px-10 lg:px-13 mt-24">
+    <main class="max-w-screen-2xl mx-auto px-4 md:px-10 lg:px-13">
         <!-- deal of the day section  -->
-        <section class="mb-5 lg:mb-">
+        <section class="mb-6 lg:mb-36">
             <!-- deal of the day title -->
             <div class="flex items-center flex-col lg:flex-row justify-between my-10">
                 <div>
@@ -299,8 +117,7 @@
                                     <div class="card-body items-center text-center p-0">
                                         <h2 class="card-title mb-5 text-4xl">Red Dragon</h2>
 
-                                        <p class="text-base mb-5 max-w-md">Professional employees are there for you to
-                                            pick the most amazing and fresh fruits.</p>
+                                        <p class="text-base mb-5 max-w-md">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                                         <!-- rating in modal -->
                                         <div class="rating rating-half mb-6">
                                             <input type="radio" name="rating-10" class="rating-hidden" />
@@ -374,8 +191,7 @@
                                     <div class="card-body items-center text-center p-0">
                                         <h2 class="card-title mb-5 text-4xl">Orange</h2>
 
-                                        <p class="text-base mb-5 max-w-md">Professional employees are there for you to
-                                            pick the most amazing and fresh fruits.</p>
+                                        <p class="text-base mb-5 max-w-md">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                                         <!-- rating in modal -->
                                         <div class="rating rating-half mb-6">
                                             <input type="radio" name="rating-10" class="rating-hidden" />
@@ -449,8 +265,7 @@
                                     <div class="card-body items-center text-center p-0">
                                         <h2 class="card-title mb-5 text-4xl">Banana</h2>
 
-                                        <p class="text-base mb-5 max-w-md">Professional employees are there for you to
-                                            pick the most amazing and fresh fruits.</p>
+                                        <p class="text-base mb-5 max-w-md">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                                         <!-- rating in modal -->
                                         <div class="rating rating-half mb-6">
                                             <input type="radio" name="rating-10" class="rating-hidden" />
@@ -524,8 +339,7 @@
                                     <div class="card-body items-center text-center p-0">
                                         <h2 class="card-title mb-5 text-4xl">Apple</h2>
 
-                                        <p class="text-base mb-5 max-w-md">Professional employees are there for you to
-                                            pick the most amazing and fresh fruits.</p>
+                                        <p class="text-base mb-5 max-w-md">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                                         <!-- rating in modal -->
                                         <div class="rating rating-half mb-6">
                                             <input type="radio" name="rating-10" class="rating-hidden" />
